@@ -28,7 +28,7 @@ function onInputChange(evt) {
             return divCardEl.insertAdjacentHTML('beforeend', createCardMarkup(data));
         })
         .catch(error => {
-            console.log('ОШИБКА!', error);
+            console.log('❌ Worning! Rejected promis!', error);
             Notiflix.Notify.failure('Oops, there is no country with that name');
         });
 };
