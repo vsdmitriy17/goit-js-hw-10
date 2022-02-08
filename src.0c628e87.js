@@ -10,4 +10,4 @@ var t,e=arguments[3];!function(e,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./css/styles.css");var e=r(require("lodash.debounce")),s=r(require("notiflix"));function r(e){return e&&e.__esModule?e:{default:e}}const u=300;
 },{"./css/styles.css":"krre","lodash.debounce":"PZFh","notiflix":"W3Ap"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.0c628e87.js.map
+//# sourceMappingURL=/goit-js-hw-10/src.0c628e87.js.map
