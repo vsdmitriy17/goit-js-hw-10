@@ -19,7 +19,46 @@ body {
   margin-bottom: 16px;
 }
 
+.name {
+  color: blue;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.23;
+  letter-spacing: 0.03;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02;
+}
+
+input {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02;
+  border-radius: 2px;
+}
+
+.description {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02;
+}
+
+.list_item {
+  display: flex;
+  align-items: center;
+}
+
+.list_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .flag {
-  width: 70px;
-  height: 70px;
+  margin-right: 12px;
+  border: black solid 1px;
 }

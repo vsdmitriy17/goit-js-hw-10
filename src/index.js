@@ -34,13 +34,15 @@ function onInputChange(evt) {
 };
 
 function createCardsListMarkup(data) {
-    return data.map(({ capital,flags,languages,name,population }) => {
+    return data.map(({ flags,name }) => {
         return `
-                <li>
-                    <svg class="flag">
-                        <use href="${flags.svg}"></use>
-                    </svg>
-                    <h3 class="name">${name.common}</h3>
+                <li class="list_item">
+                    <img class="flag"
+                        src="${flags.png}"
+                        alt="${name.common}"
+                        width="40"
+                    />
+                    <b class="description">${name.common}</b>
                 </li>
                 `;
     }).join('');
@@ -51,13 +53,17 @@ function createCardMarkup(data) {
     const capitalCities = capital.join(", ");
     const languagesList = Object.values(languages).join(", ");
     return `
-                <svg class="flag">
-                    <use href="${flags.svg}"></use>
-                </svg>
-                <h3 class="name">${name.official}</h3>
-                <p><span>Capital:</span> ${capitalCities}</p>
-                <p><span>Population:</span> ${population}</p>
-                <p><span>Languages:</span> ${languagesList}</p>
+                <div class="list_item">
+                    <img class="flag"
+                        src="${flags.png}"
+                        alt="${name.common}"
+                        width="70"
+                    />
+                    <h3 class="name">${name.official}</h3>
+                </div>
+                <p><span class="description">Capital:</span> ${capitalCities}</p>
+                <p><span class="description">Population:</span> ${population}</p>
+                <p><span class="description">Languages:</span> ${languagesList}</p>
             `;
 }; 
 
