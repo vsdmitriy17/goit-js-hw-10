@@ -21,7 +21,7 @@ function onInputChange(evt) {
                 return Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
             } else if (data.length > 1) {
                 console.log(data);
-                const cardsMarkup = createCardsListMarkup(data);
+                const cardsMarkup = createListMarkup(data);
                 return ulCardsEl.insertAdjacentHTML('beforeend', cardsMarkup);
             }
             console.log(data);
@@ -33,7 +33,7 @@ function onInputChange(evt) {
         });
 };
 
-function createCardsListMarkup(data) {
+function createListMarkup(data) {
     return data.map(({ flags,name }) => {
         return `
                 <li class="list_item">
