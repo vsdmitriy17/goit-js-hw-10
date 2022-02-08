@@ -18,3 +18,8 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.flag {
+  width: 70px;
+  height: 70px;
+}
