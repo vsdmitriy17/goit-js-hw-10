@@ -15,6 +15,11 @@ function onInputChange(evt) {
     console.log(evt.target.value.trim());
     const name = evt.target.value.trim();
     cleanPage();
+    
+    if (!name) {
+        return;
+    };
+
     fetchCountries(name)
         .then(data => {
             if (data.length > 10) {
