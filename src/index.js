@@ -2,8 +2,10 @@ import './css/styles.css';
 import debounce from 'lodash.debounce';
 import Notiflix from 'notiflix';
 import { fetchCountries } from "./fetchCountries.js";
+import { notiflixOptions } from "./notiflixOptions.js";
 
 const DEBOUNCE_DELAY = 300;
+notiflixOptions;
 
 const inputEl = document.querySelector('input#search-box');
 const divCardEl = document.querySelector('.country-info');
@@ -15,7 +17,7 @@ function onInputChange(evt) {
     console.log(evt.target.value.trim());
     const name = evt.target.value.trim();
     cleanPage();
-    
+
     if (!name) {
         return;
     };
@@ -39,7 +41,7 @@ function onInputChange(evt) {
 };
 
 function createListMarkup(data) {
-    return data.map(({ flags,name }) => {
+    return data.map(({ flags, name }) => {
         return `
                 <li class="list_item">
                     <img class="flag"
@@ -51,7 +53,7 @@ function createListMarkup(data) {
                 </li>
                 `;
     }).join('');
-}; 
+};
 
 function createCardMarkup(data) {
     const { capital, flags, languages, name, population } = data[0];
@@ -70,7 +72,7 @@ function createCardMarkup(data) {
                 <p><span class="description">Population:</span> ${population}</p>
                 <p><span class="description">Languages:</span> ${languagesList}</p>
             `;
-}; 
+};
 
 function cleanPage() {
     divCardEl.innerHTML = '';
