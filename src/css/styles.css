@@ -39,6 +39,8 @@ p {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02;
+  border-radius: 4px;
+  margin-left: 15px;
 }
 
 .description {
@@ -60,4 +62,11 @@ p {
 .flag {
   margin-right: 12px;
   border: black solid 1px;
+}
+.country-list {
+  padding-left: 20 px;
+}
+
+.country-info {
+  padding-left: 20 px;
 }
