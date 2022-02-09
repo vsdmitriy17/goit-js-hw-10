@@ -65,9 +65,9 @@ function createCardMarkup(data) {
                     />
                     <h3 class="name">${name.official}</h3>
                 </div>
-                <p class="descr"><span class="description">Capital:</span> ${capitalCities}</p>
-                <p class="descr"><span class="description">Population:</span> ${population}</p>
-                <p class="descr"><span class="description">Languages:</span> ${languagesList}</p>
+                <p class="descrItem"><span class="description">Capital:</span> ${capitalCities}</p>
+                <p class="descrItem"><span class="description">Population:</span> ${population}</p>
+                <p class="descrItem"><span class="description">Languages:</span> ${languagesList}</p>
             `;
 };
 
