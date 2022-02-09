@@ -64,9 +64,13 @@ p {
   border: black solid 1px;
 }
 .country-list {
-  padding-left: 20 px;
+  padding-left: 20px;
 }
 
 .country-info {
-  padding-left: 20 px;
+  padding-left: 20px;
+}
+
+.descr {
+  padding-left: 20px;
 }
