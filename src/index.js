@@ -5,7 +5,6 @@ import { fetchCountries } from "./fetchCountries.js";
 import { notiflixOptions } from "./notiflixOptions.js";
 
 const DEBOUNCE_DELAY = 300;
-notiflixOptions;
 
 const inputEl = document.querySelector('input#search-box');
 const divCardEl = document.querySelector('.country-info');
