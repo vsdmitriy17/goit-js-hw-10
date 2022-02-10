@@ -1,5 +1,6 @@
 import Notiflix from 'notiflix';
 
+// Объект настроек библиотеки Notiflix.Notify
 const notiflixOptions = Notiflix.Notify.init({
   width: '500px',
   position: 'center-center', // 'right-top' - 'right-bottom' - 'left-top' - 'left-bottom' - 'center-top' - 'center-bottom' - 'center-center'
